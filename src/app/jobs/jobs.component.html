@@ -1,0 +1,38 @@
+
+<div class="container">
+
+
+    <div *ngIf="(!jobParam); then noParam; else showJobs">
+    </div>
+
+    <ng-template #noParam>
+        You didnt search for anything bro
+    </ng-template>
+
+    <ng-template #showJobs>
+      {{jobParam}}
+   
+       
+            <div class="row job-list" *ngFor="let job of jobs | async">
+              <div class="col-4 col-md-2">  
+                  <div class="panel panel-default">
+                      <div class="panel-body d-flex justify-content-center my-auto">
+                          {{job.jSector}}
+                      </div>
+                  </div>
+                </div>
+                
+              <div class="col-8 col-md-10">  <b>Position</b> | {{job.jTitle}} <br />
+                <b>Date Posted | </b>  {{job.datePosted | date:"MM/dd/yyyy"}} <br />
+                <b> Job Description | </b> {{job.jBrief}}
+              </div>
+              <div class="col-1">
+                <button type="button" class="btn btn-default"> Unlock </button>
+              </div>
+            </div> 
+       
+    </ng-template>
+   
+
+  
+</div>

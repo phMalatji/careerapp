@@ -1,0 +1,66 @@
+
+
+<div class="container">
+                <div class="row">
+                   <div class="col-lg-6">
+                      Select By Region
+                   </div>
+                   <div class="col-lg-4">
+                      Select By Sector
+                      <div class="careers-sector">
+                         <!-- content to be placed inside <body>…</body> -->
+                         <input type='radio' name='opt' id='ococonut' class='menuopt ococonut'>
+                         <input type='radio' name='opt' id='ovanilla' class='menuopt ovanilla'>
+                         <input type='radio' name='opt' id='oorange' class='menuopt oorange'>
+                         <input type='radio' name='opt' id='oalmond' class='menuopt oalmond'>
+                         <input type='radio' name='opt' id='ogrape' class='menuopt ogrape'>
+                         <input type='radio' name='opt' id='oblackberry' class='menuopt oblackberry'>
+                         <input type='radio' name='opt' id='ocherry' class='menuopt ocherry'>
+                         <input type='radio' name='opt' id='ostrawberry' class='menuopt ostrawberry'>
+                         <input type='radio' name='opt' id='oraspberry' class='menuopt oraspberry'>
+                         <input type='radio' name='opt' id='unsel' class='menuopt' checked>
+                         <div class="navi">
+                            <ul class='circle'>
+                               <li class='coconut light slice' (mouseover)="updateSector('finance')">
+                                  <label for='ococonut' class='circle'>
+                                  Finance
+                                  </label>
+                               </li>
+                               <li class='vanilla light slice' (mouseover)="updateSector('Agriculture')">
+                                  <label for='ovanilla' class='circle'>Agriculture</label>
+                               </li>
+                               <li class='orange light slice' (mouseover)="updateSector('Engineering')">
+                                  <label for='oorange' class='circle'>Engineering</label>
+                               </li>
+                               <li class='almond light slice'>
+                                  <label for='oalmond' class='circle' (mouseover)="updateSector('IT')">I.T</label>
+                               </li>
+                               <li class='grape light slice'>
+                                  <label for='ogrape' class='circle'>Health Care</label>
+                               </li>
+                               <li class='blackberry dark slice'>
+                                  <label for='oblackberry' class='circle'>Law</label>
+                               </li>
+                               <li class='cherry dark slice'>
+                                  <label for='ocherry' class='circle'>Marketing</label>
+                               </li>
+                               <li class='strawberry dark slice'>
+                                  <label for='ostrawberry' class='circle'>Education</label>
+                               </li>
+                               <li class='raspberry light slice'>
+                                  <label for='oraspberry' class='circle'>Business</label>
+                               </li>
+                               <li class='unsel circle'><label for='unsel'></label></li>
+                            </ul>
+                         </div>
+                      </div>
+
+                   </div>
+                   <div class="col-lg-2 my-auto">
+                                <span>{{selectedSector}}</span>
+                   </div>
+                </div>
+             </div>
+           
+             
+             

@@ -1,0 +1,136 @@
+.menuopt { display: none; }
+.circle, .circle:before, .circle:after { border-radius: 50%; }
+.navi {
+	margin: 5em auto;
+	min-width: 16em; width: 72%; max-width: 40em;
+}
+.navi ul {
+	position: relative;
+	padding: 50%;
+	max-width: 0; max-height: 0;
+	box-shadow: 0 0 .5em rgba(0,0,0,.5);
+	list-style: none;
+	background: white;
+}
+.navi li {
+	position: absolute;
+	transition: 2s;
+}
+.slice {
+	overflow: hidden;
+	position: absolute;
+	top: 0; left: 0;
+	width: 50%; height: 50%;
+	transform-origin: 100% 100%;
+}
+.unsel {
+	top: 19%; left: 19%;
+	width: 62%; height: 62%;
+	box-shadow: 0 0 .75em;
+	background: white;
+
+}
+.coconut { transform: skewX(50deg); }
+.vanilla { transform: rotate(40deg) skewX(50deg); }
+.orange { transform: rotate(80deg) skewX(50deg); }
+.almond { transform: rotate(120deg) skewX(50deg); }
+.grape { transform: rotate(160deg) skewX(50deg); }
+.blackberry { transform: rotate(-160deg) skewX(50deg); }
+.cherry { transform: rotate(-120deg) skewX(50deg); }
+.strawberry { transform: rotate(-80deg) skewX(50deg); }
+.raspberry { transform: rotate(-40deg) skewX(50deg); }
+.magnifiable { height: 100%; }
+.navi label { cursor: pointer; }
+.slice label {
+	display: block;
+	width: 200%; height: 200%;
+	transform: skew(-50deg) rotate(-70deg);
+	box-shadow: 0 0 .1em black;
+	opacity: .5;
+	color: transparent;
+	font-size: .7em;
+	line-height: 1.9;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.6s;
+}
+.slice label:before {
+	position: absolute;
+	top: 12%; left: 10%;
+	width: 80%; height: 80%;
+	border-radius: 50%;
+	box-shadow: 0 0 1em rgba(0,0,0,.5);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 35% 35%;
+	content: '';
+}
+.slice label:hover { opacity: 1; }
+.dark label:hover { color: white; }
+.light label:hover { color: black; }
+.unsel label {
+    display: block;
+
+	height: 100%;
+	background: radial-gradient(#ccc, transparent 50%);
+}
+.coconut label, .ococonut:checked ~ .navi .unsel { background:#00add9; }
+.vanilla label, .ovanilla:checked ~ .navi .unsel { background: #0094ca; }
+.orange label, .oorange:checked ~ .navi .unsel { background: #0080bc; }
+.almond label, .oalmond:checked ~ .navi .unsel { background: #0066a1; }
+.grape label, .ogrape:checked ~ .navi .unsel { background: #075988; }
+.blackberry label, .oblackberry:checked ~ .navi .unsel { background: #064061; }
+.cherry label, .ocherry:checked ~ .navi .unsel { background: #125472; }
+.strawberry label, .ostrawberry:checked ~ .navi .unsel { background: #7aa6af; }
+.raspberry label, .oraspberry:checked ~ .navi .unsel { background: #87d2e7; }
+.coconut label:before {
+    background-color:#0066a1;
+     /* background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Cocos_nucifera00.jpg/320px-Cocos_nucifera00.jpg);  */
+
+    }
+.vanilla label:before {
+    /* background-image: url(http://www.learningherbs.com/image-files/vanilla-extract-7.jpg);  */
+    background-color:#0080bc;
+}
+.orange label:before {
+	}
+.almond label:before {
+	//background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/PikiWiki_Israel_7025_Amond_blossom.jpg/170px-PikiWiki_Israel_7025_Amond_blossom.jpg);
+}
+.slice label:hover:after { opacity: 0; }
+.ococonut:checked ~ .navi .coconut { transform: skewX(50deg) scale(1.2); }
+.ovanilla:checked ~ .navi .vanilla { transform: rotate(40deg) skewX(50deg) scale(1.2); }
+.oorange:checked ~ .navi .orange { transform: rotate(80deg) skewX(50deg) scale(1.2); }
+.oalmond:checked ~ .navi .almond { transform: rotate(120deg) skewX(50deg) scale(1.05); }
+.ogrape:checked ~ .navi .grape { transform: rotate(160deg) skewX(50deg) scale(1.05); }
+.oblackberry:checked ~ .navi .blackberry { transform: rotate(-160deg) skewX(50deg) scale(1.05); }
+.ocherry:checked ~ .navi .cherry { transform: rotate(-120deg) skewX(50deg) scale(1.05); }
+.ostrawberry:checked ~ .navi .strawberry { transform: rotate(-80deg) skewX(50deg) scale(1.05); }
+.oraspberry:checked ~ .navi .raspberry { transform: rotate(-40deg) skewX(50deg) scale(1.05); }
+.ococonut:checked ~ .navi .coconut label,
+.ovanilla:checked ~ .navi .vanilla label,
+.oorange:checked ~ .navi .orange label,
+.oalmond:checked ~ .navi .almond label,
+.ogrape:checked ~ .navi .grape label,
+.oraspberry:checked ~ .navi .raspberry label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: black;
+}
+.oblackberry:checked ~ .navi .blackberry label ,
+.ocherry:checked ~ .navi .cherry label,
+.ostrawberry:checked ~ .navi .strawberry label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: white;
+}
+
+
+.careers-sector{
+
+    width:320px;
+    height:240px;
+}
+.sector-selection{
+    background-color:red;
+    position:absolute;
+    left:50%;
+}
